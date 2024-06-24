@@ -5,6 +5,10 @@ import patternOverlay from './img/pattern-overlay.png';
 import patternOverlay1 from './img/pattern-overlay1.png';
 import FeaturedProducts from './components/FeaturedProducts.tsx';
 import PopularProduct from './components/PopularProduct.tsx';
+import Suscribre from './components/Suscribre.tsx';
+import RecentCollection from './components/RecentCollection.tsx';
+import LatestBlog from './components/LatestBlog.tsx';
+import Footer from './components/Footer.tsx';
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
       </div>
       <FeaturedProducts />
       <PopularProduct />
+      <Suscribre />
+      <RecentCollection />
+      <LatestBlog />
+      <Footer />
     </>
   );
 }

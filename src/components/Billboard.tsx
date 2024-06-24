@@ -2,7 +2,10 @@ import SingleImage from '../img/single-image.png';
 
 const Billboard = () => {
   return (
-    <section id='billboard' className='py-5 my-5 flex justify-center relative'>
+    <section
+      id='billboard'
+      className='py-5 my-5 p-5 flex justify-center relative'
+    >
       <div className='container'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center relative'>
           <div className='md:col-span-1'>
@@ -35,7 +38,7 @@ const Billboard = () => {
             </div>
           </div>
           <div className='md:col-span-1'>
-            <div className='image-holder text-center'>
+            <div className='flex justify-center'>
               <img src={SingleImage} alt='banner' />
             </div>
           </div>

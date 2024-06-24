@@ -5,7 +5,7 @@ const FeaturedProducts = () => {
   return (
     <section id='featured-products' className='p-5'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-        <div className='card relative'>
+        <div className='relative'>
           <div className='relative overflow-hidden group'>
             <img
               src={productItem}
@@ -13,7 +13,7 @@ const FeaturedProducts = () => {
               className='w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110'
             />
           </div>
-          <div className='absolute bottom-0 left-0 p-5 text-white' z-10>
+          <div className='absolute bottom-0 left-0 p-5 text-white'>
             <h2 className='text-4xl font-semibold'>Colorful Indoors</h2>
             <div className='mt-4 uppercase'>
               <a href='#'>
@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
             </div>
           </div>
         </div>
-        <div className='card relative'>
+        <div className='relative'>
           <div className='relative overflow-hidden group'>
             <img
               src={productItem1}

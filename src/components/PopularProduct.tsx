@@ -1,22 +1,20 @@
 import productItem2 from '../img/product-item2.jpg';
 import productItem3 from '../img/product-item3.jpg';
 import productItem4 from '../img/product-item4.jpg';
+import patternOverlay3 from '../img/pattern-overlay3.png';
 
 const PopularProduct = () => {
   return (
     <section
       id='popular-products'
-      className='bg-light-green py-20 relative overflow-hidden'
+      className='bg-light-green py-20 relative overflow-hidden p-5'
     >
       <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-          {/* <!-- <div className="pattern-overlay2">
-        <img src="images/pattern-overlay2.png" alt="pattern" className="absolute">
-      </div> -->
-      <div className="pattern-overlay3 absolute top-0 right-0">
-        <img src="images/pattern-overlay3.png" alt="pattern">
-      </div> */}
-          <div className='card-header col-span-3 bg-transparent mb-16'>
+          <div className=' absolute top-0 right-0'>
+            <img src={patternOverlay3} alt='pattern' />
+          </div>
+          <div className='col-span-3 bg-transparent mb-16'>
             <div className='section-header'>
               <h3 className='text-6xl font-semibold font-overTheRainbow pb-10'>
                 most popular
@@ -37,32 +35,32 @@ const PopularProduct = () => {
               </a>
             </div>
           </div>
-          <div className='product-row col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8'>
-            <div className='card product-card bg-transparent'>
+          <div className='col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <div className='bg-transparent'>
               <div className='card-image mb-4'>
                 <img src={productItem2} alt='plant' className='w-full h-auto' />
               </div>
-              <h3 className='product-title text-center text-4xl font-medium'>
+              <h3 className='text-center text-4xl font-medium'>
                 <a href='#' className='hover:text-green-600'>
                   Cane plants
                 </a>
               </h3>
             </div>
-            <div className='card product-card bg-transparent'>
+            <div className='bg-transparent'>
               <div className='card-image mb-4'>
                 <img src={productItem3} alt='plant' className='w-full h-auto' />
               </div>
-              <h3 className='product-title text-center text-4xl font-medium'>
+              <h3 className='text-center text-4xl font-medium'>
                 <a href='#' className='hover:text-green-600'>
                   Ficus plants
                 </a>
               </h3>
             </div>
-            <div className='card product-card bg-transparent'>
+            <div className='bg-transparent'>
               <div className='card-image mb-4'>
                 <img src={productItem4} alt='plant' className='w-full h-auto' />
               </div>
-              <h3 className='product-title text-center text-4xl font-medium'>
+              <h3 className='text-center text-4xl font-medium'>
                 <a href='#' className='hover:text-green-600'>
                   Vinca vines
                 </a>
